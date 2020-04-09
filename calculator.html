@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator.html</title>
+    <style>
+      table {
+        background-color: #dddddd;
+        border-radius: 5px 5px 5px 5px;
+        border-spacing: 5px;
+      }
+      .screen {
+        background-color: #70c738;
+        text-align: right;
+      }
+      .button {
+        text-align: center;
+        background-color: gray;
+        color: white;
+      }
+      .number {
+        text-align: center;
+        background-color: #373737;
+        color: white;
+      }
+      .number td:last-child {
+        background-color: #fa960a;
+      }
+      .number td {
+        font-size: 20px;
+        border-radius: 10px 10px 10px 10px;
+      }
+      .button th {
+        border-radius: 10px 10px 10px 10px;
+      }
+      .screen td {
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 10px 10px 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>계산기</h2>
+
+    <table width="400px" cellpadding="10">
+      <tr class="screen">
+        <td colspan="4">123+654</td>
+      </tr>
+      <tr class="button">
+        <th colspan="2">BackSpace</th>
+        <th colspan="2">C</th>
+      </tr>
+      <tr class="number">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>/</td>
+      </tr>
+      <tr class="number">
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>*</td>
+      </tr>
+      <tr class="number">
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>+</td>
+      </tr>
+      <tr class="number">
+        <td>=</td>
+        <td>0</td>
+        <td>.</td>
+        <td>-</td>
+      </tr>
+    </table>
+  </body>
+</html>
