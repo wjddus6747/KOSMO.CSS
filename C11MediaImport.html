@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C11MediaImport.html</title>
+    <style>
+        /*
+        @import
+        - <link>테그를 대채할수 있다.
+        -style태그안에서 사용해야하고 반드시 최상단에 선언해야한다.
+        -CSS파일에 오류가 있는경우 다운로드 하지 않는다.
+        */
+        @import url('./style/import.css');
+        .content{
+            background-color: black; color: red;
+        }
+        /*
+        @media
+        -해당 웹페이지를 디바이스의 종류에 따라 각각 다르게 화면을
+        구성할수 있게 해주는 기능을 가지고 있다.
+        -스크린용과 프린트용을 구분해야 할때 사용한다.
+        */
+        @media screen {
+            .content{
+                background-color:black; color: white;
+            }
+        }
+        @media print{
+            .content{
+                background-color: red;color: yellow;
+            }
+        }
+    </style>
+  </head>
+  <body>
+      <h2>media속성</h2>
+      <div class="content">
+          <p>
+              <h3>기사제목을 삽입하세요</h3>
+              [코로나 극복을 위해 일찍 투표하세요. 모두를 위해 사전투표하세요.]
+              <br /><br />
+              [원유철/미래한국당 대표 : 존경하는 국민 여러분, 투표가 힘입니다.]
+              <br /><br />
+              각 당은 일제히 오늘부터 시작되는 사전투표 참여를 호소했습니다.
+              <br /><br />
+              역대 선거를 보면 사전투표율이 높으면 자신들에게 유리했다는 게 민주당의
+              셈법입니다.
+              <br /><br />
+              반면 통합당은 숨은 보수 표심, 이른바 '샤이보수'를 최대한 많이 투표장으로
+              끌어내겠단 전략입니다.
+              <br /><br />
+              하지만 사전투표율과 그에 따른 각 당의 유불리는 쉽게 예측이 불가능합니다.
+              <br /><br />
+              대신 사전투표율로 이번 총선의 전체 투표율은 가늠해볼 수 있습니다.
+              <br /><br />
+              사전투표율이 12% 수준이었던 20대 총선 땐 전체 투표율이 58%에 그쳤지만,
+              사전투표율이 26%까지 뛰었던 지난 대선은 투표율이 70%를 넘어갔기 때문입니다.
+          </p>
+      </div>
+   
+  </body>
+</html>
